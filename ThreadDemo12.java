@@ -7,12 +7,6 @@ class Data
     {
         Arr = new int[size];
     }
-
-    protected void finalize()
-    {
-        Arr = null;
-    }
-
     public void Accept()
     {
         Scanner sobj = new Scanner(System.in);
@@ -70,7 +64,7 @@ class ThreadDemo12
 {
     public static void main(String a[]) throws InterruptedException
     {
-        Data obj1 = new Data(6);
+        Data obj1 = new Data(10);
         obj1.Accept();
 
         DemoEven eobj = new DemoEven(obj1);

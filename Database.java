@@ -1,4 +1,4 @@
-import java.sql.*;          // 1
+import java.sql.*;
 
 class Database
 {
@@ -9,23 +9,18 @@ class Database
         String Password = "root";
         String Query = "select * from student";
 
-        Connection cobj = DriverManager.getConnection(URL,Username,Password);   // 2
-        
-        Statement sobj = cobj.createStatement();        // 3
+        Connection cobj = DriverManager.getConnection(URL,Username,Password);
 
-        ResultSet robj = sobj.executeQuery(Query);      // 4
+        Statement sobj = cobj.createStatement();
 
-        while(robj.next())          // 5
+        ResultSet robj = sobj.executeQuery(Query);
+
+        while(robj.next())
         {
             System.out.println("RID : "+robj.getInt("RID"));
             System.out.println("Name : "+robj.getString("Name"));
             System.out.println("City : "+robj.getString("City"));
-            System.out.println("Marks : "+robj.getInt("Marks"));                                    
+            System.out.println("Marks : "+robj.getInt("Marks"));        
         }
     }
 }
-
-
-// execute()            Create table
-// executeQuery()       select
-// executeUpdate()      delete / update / alter / insert

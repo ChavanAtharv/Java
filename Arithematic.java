@@ -21,5 +21,3 @@ public class Arithematic
           return Value1 - Value2;
      }
 }
-
-                    // javac  Arithematic.java     -d   .

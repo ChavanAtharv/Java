@@ -1,12 +1,13 @@
+
 class Demo
 {
     public int Size;
     public int Arr[];
 
-    public Demo(int No)
+    public Demo(int iNo)
     {
         System.out.println("Inside Constructor");
-        Size = No;
+        Size = iNo;
         Arr = new int[Size];
     }
 
@@ -19,7 +20,7 @@ class Demo
 
 class FinalizeDemo
 {
-    public static void main(String s[])
+    public static void main(String A[])
     {
         Demo obj = new Demo(4);
         obj = null;
