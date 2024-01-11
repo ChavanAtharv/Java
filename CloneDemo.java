@@ -36,8 +36,7 @@ class CloneDemo
             eobj1.Name = "Sagar";
 
             System.out.println("Name of first employee : "+eobj1.Name);
-            System.out.println("Name of second employee : "+eobj2.Name);   
-
+            System.out.println("Name of second employee : "+eobj2.Name);
         }
         catch(CloneNotSupportedException obj)
         {}

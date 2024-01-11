@@ -12,10 +12,10 @@ class Demo
 
 class HashCodeDemo
 {
-    public static void main(String Arg[])
+    public static void main(String A[])
     {
         Demo obj = new Demo(11,21);
 
         System.out.println("Hashcode of the obj is : "+obj.hashCode());
-    }`
+    }
 }

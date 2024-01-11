@@ -7,7 +7,7 @@ class Collections7
         Stack <Character>sobj = new Stack<Character>();
 
         sobj.push('a');
-        sobj.push('c');
+        sobj.push('b');
         sobj.push('c');
         sobj.push('d');
         sobj.push('e');
@@ -17,6 +17,6 @@ class Collections7
         System.out.println("Poped element is : "+sobj.pop());
 
         System.out.println("Elements of stack : "+sobj);
-       
+
     }
 }

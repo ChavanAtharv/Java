@@ -1,16 +1,13 @@
 import java.util.*;      // Inbuilt package
 import Marvellous.Arithematic;     // User defined package
 import Marvellous.PPA.Loop;
-
 class DemoPackage
 {
      public static void main(String arr[])
      {
           Scanner sobj = new Scanner(System.in);
-
           System.out.println("Enter first number");
           int iNo1 = sobj.nextInt();
-
           System.out.println("Enter second number");
           int iNo2 = sobj.nextInt();
 
